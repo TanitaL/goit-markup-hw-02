@@ -5,9 +5,9 @@
     --logo-color: #000000;
     --secondary-text-color: #FFFFFF;
     --contacts-footer-color: rgba(255, 255, 255, 0.6);
-    --background-color-hero-footer: #2F303A;
-    --background-color-team: #F5F4FA;
-    --primary-bg-color: #FFFFFF;
+    --background-color-secondary-dark: #2F303A;
+    --background-color-secondary-light: #F5F4FA;
+    --primary-background-color: #FFFFFF;
 }
 
 body {
@@ -74,7 +74,7 @@ ul {
 
 /* Section Hero */
 .section-hero {
-    background-color: var(--background-color-hero-footer);
+    background-color: var(--background-color-secondary-dark);
 }
 .hero-title {
     color: var(--secondary-text-color);
@@ -117,7 +117,7 @@ ul {
     
 /* Section Team */
 .section-team {
-    background-color: var(--background-color-team);
+    background-color: var(--background-color-secondary-light);
 }
 .name {
     color: var(--title-and-nav-text-color);
@@ -135,7 +135,7 @@ ul {
 
 /* Footer */
 .footer {
-    background-color: var(--background-color-hero-footer);
+    background-color: var(--background-color-secondary-dark);
 }
 .address {
     color: var(--secondary-text-color);
@@ -151,24 +151,48 @@ ul {
     text-decoration: none;
 }
 
-
-
-
-
-
-
 /* Styles for portfolio.html */
 
+/* Examples */
+/* Buttons */
+.buttons-nav .button-link.current {
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+}
 .buttons-nav .button-link {
     color: var(--title-and-nav-text-color);
+    background-color: var(--background-color-secondary-light);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;    
+    text-align: center;
 }
 .buttons-nav .button-link:hover,
 .buttons-nav .button-link:focus {
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
 }
-
-.buttons-nav .button-link.current {
+/* Cards */
+.section-examples .link {
+    text-decoration: none;
+}
+.example-name {
+    color: var(--title-and-nav-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+.type {
+    color: var(--primery-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
+.information {
     color: var(--secondary-text-color);
-    background-color: var(--accent-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
 }
