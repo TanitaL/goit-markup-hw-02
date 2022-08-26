@@ -32,11 +32,23 @@ ul {
 /* акцент тексту #2196F3 */
 
 /* Styles for index.html */
+
 /* Header */
-/* Logo */
-.logo {
+/* Logos */
+.logo-nav {
     color: var(--logo-color);
     font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+.logo-footer {
+    color: var(--secondary-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
@@ -46,34 +58,36 @@ ul {
 
 /* Navigation */
 }
-.site-nav .link {
+.site-navigation .link {
     color: var(--title-and-nav-text-color);
+    font-style: normal;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-.site-nav .link:hover, 
-.site-nav .link:focus {
+.site-navigation .link:hover, 
+.site-navigation .link:focus {
     color: var(--accent-color);
 }
-.site-nav .link.current {
+.site-navigation .link.current {
     color: var(--accent-color);
 }
-.contacts-nav .contacts {
+.contacts-navigation .contacts {
     color: var(--primery-text-color);
+    font-style: normal;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-.contacts-nav .contacts:hover,
-.contacts-nav .contacts:focus {
+.contacts-navigation .contacts:hover,
+.contacts-navigation .contacts:focus {
     color: var(--accent-color);
 }
 
 /* Section Hero */
-.section-hero {
+.hero {
     background-color: var(--background-color-secondary-dark);
 }
 .hero-title {
@@ -86,7 +100,7 @@ ul {
     text-transform: uppercase;
 }
 /* Button */
-.button {
+.btn {
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -96,6 +110,7 @@ ul {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 /* Section Features*/
@@ -116,7 +131,7 @@ ul {
 }
     
 /* Section Team */
-.section-team {
+.team {
     background-color: var(--background-color-secondary-light);
 }
 .name {
@@ -134,50 +149,56 @@ ul {
 }
 
 /* Footer */
-.footer {
+.footer-info {
     background-color: var(--background-color-secondary-dark);
 }
-.address {
+.street {
     color: var(--secondary-text-color);
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
 }
-.e-mail,
-.tel {
+.footer-info .contacts {
     color: var(--contacts-footer-color);
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
+}
+.footer-info .contacts:hover,
+.footer-info .contacts:focus {
+    color: var(--accent-color);
 }
 
 /* Styles for portfolio.html */
 
 /* Examples */
 /* Buttons */
-.buttons-nav .button-link.current {
+.buttons-nav .btn-link.current {
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
 }
-.buttons-nav .button-link {
+.buttons-nav .btn-link {
     color: var(--title-and-nav-text-color);
     background-color: var(--background-color-secondary-light);
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;    
     text-align: center;
+    cursor: pointer;
 }
-.buttons-nav .button-link:hover,
-.buttons-nav .button-link:focus {
+.buttons-nav .btn-link:hover,
+.buttons-nav .btn-link:focus {
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
 }
 /* Cards */
-.section-examples .link {
+.examples .link {
     text-decoration: none;
 }
-.example-name {
+.project-title {
     color: var(--title-and-nav-text-color);
+    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -186,12 +207,14 @@ ul {
 }
 .type {
     color: var(--primery-text-color);
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
 }
 .information {
     color: var(--secondary-text-color);
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
